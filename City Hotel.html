@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>City Lights Hotel | Urban Comfort</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root{
+  --primary:#1e40af; /* deep blue */
+  --secondary:#f87171; /* soft red */
+  --dark:#111827;
+  --light:#f3f4f6;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:var(--light);
+  color:var(--dark);
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://gommts3.mmtcdn.com/htl-imgs/htl-imgs/4219023832547853-9afc18c9_z.jpg?output-quality=75&downsize=243:162&output-format=jpg");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+}
+
+.hero h1{font-size:4rem;}
+.hero p{font-size:1.2rem;margin-top:10px;}
+
+/* SECTION */
+.section{padding:80px 8%;}
+.section-title{
+  text-align:center;
+  font-size:2.7rem;
+  color:var(--primary);
+  margin-bottom:50px;
+}
+
+/* CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:#fff;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 10px 25px ;
+  transition:.4s;
+}
+
+.card:hover{
+  transform:translateY(-15px) scale(1.03);
+  box-shadow:0 25px 45px rgba(0,0,0,.25);
+}
+
+.card img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:22px;
+}
+
+.card-content h3{
+  color:var(--primary);
+}
+
+.card-content span{
+  color:var(--secondary);
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* BOOKING */
+.booking{
+  background:
+    linear-gradient(rgba(30,64,175,.9),rgba(30,64,175,.9)),
+    url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/f5/c4/ae/intercontinental-paris.jpg?w=1200&h=-1&s=1");
+  background-size:cover;
+  background-position:center;
+  color:;
+}
+
+.booking form{
+  max-width:900px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.booking input,
+.booking select,
+.booking button{
+  padding:14px;
+  border:none;
+  border-radius:8px;
+  font-size:1rem;
+}
+
+.booking select{
+  background:#fff;
+  color:#000;
+}
+
+.booking button{
+  background:var(--secondary);
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* Success message */
+#successMessage{
+  display:none;
+  margin-top:20px;
+  background:rgba(255,255,255,0.95);
+  color:#1e3a8a;
+  padding:15px 20px;
+  border-radius:8px;
+  font-weight:600;
+  text-align:center;
+  opacity:0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.gallery img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:15px;
+  transition:.4s;
+}
+
+.gallery img:hover{
+  transform:scale(1.07);
+}
+
+/* FOOTER */
+footer{
+  background:#1e3a8a;
+  color:#fff;
+  padding:40px 8% 20px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+}
+
+footer a{
+  color:#e5e7eb;
+  text-decoration:none;
+}
+
+footer a:hover{
+  color:var(--secondary);
+}
+
+.social i{
+  margin-right:12px;
+  font-size:1.4rem;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:25px;
+  font-size:.9rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero h1{font-size:2.6rem;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>City Light Hotel</h1>
+    <p>Experience comfort in the heart of the city</p>
+  </div>
+</section>
+
+<!-- HOTEL ROOMS -->
+<section class="section">
+  <h2 class="section-title">Our Rooms</h2>
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://secure.s.forbestravelguide.com/img/properties/baccarat-hotel-and-residences/baccarat-hotel-and-residences-suite.jpg">
+      <div class="card-content">
+        <h3>Deluxe Room</h3>
+        <span>Explore →</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://justinpluslauren.com/wp-content/uploads/2025/03/2025-Tokyo292.jpg">
+      <div class="card-content">
+        <h3>Standard Room</h3>
+        <span>Explore →</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://hanoilionboutiquehotel.com/images/rooms/original/5o4a1180_1749712356.jpg">
+      <div class="card-content">
+        <h3>Executive Suite</h3>
+        <span>Explore →</span>
+      </div>
+    </div>
+
+     <div class="card">
+      <img src="https://www.bloggeratlarge.com/wp-content/uploads/2025/08/Dominick-hotel-view-1024x771.jpg">
+      <div class="card-content">
+        <h3>City View Room</h3>
+        <span>Explore →</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.marriott.com/content/dam/marriott-digital/xr/emea/hws/f/flrxr/es_es/photo/unlimited/assets/xr-flrxr-presidential-suite--22902.jpg">
+      <div class="card-content">
+        <h3>Presidential Suite</h3>
+        <span>Explore →</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.disneyholidays.co.uk/disneyland-paris/images/hotels/disneyland-hotel/rooms/superior-family-room.jpg">
+      <div class="card-content">
+        <h3>Family Room</h3>
+        <span>Explore →</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="section booking">
+  <h2 class="section-title" style="color:#fff;">Book Your Stay</h2>
+
+  <form id="bookingForm">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+
+    <select required>
+      <option value="">Select Destination</option>
+      <option>Tokyo</option>
+      <option>New York</option>
+      <option>Paris</option>
+    </select>
+
+    <input type="date" placeholder="Check-in" required>
+    <input type="date" placeholder="Check-out" required>
+
+    <button type="submit">Book Now</button>
+  </form>
+
+  <!-- Success message -->
+  <div id="successMessage">
+    ✅ Your booking has been successfully done! See you soon at City Light Hotel.
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section">
+  <h2 class="section-title">Hotel Gallery</h2>
+  <div class="gallery">
+    <img src="https://www.ahstatic.com/photos/b870_rokge_01_p_1024x768.jpg">
+    <img src="https://www.parklanenewyork.com/content/uploads/2024/09/PRK_Stay_TwoQueen_CityView_3-1600x920.jpg">
+    <img src="https://www.travelandleisure.com/thmb/JInn4l0Yi0mIDCszOQaqhUEw4PA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/virgin-hotels-nyc-pool-club-3569e24bb1c047a492a94fdf1e7fa383.jpg">
+    <img src="https://www.kayak.com/rimg/himg/9a/cb/61/agoda-32481-245653167-763345.jpg?width=836&height=607&crop=true">
+    <img src="https://image-tc.galaxy.tf/wijpeg-5lk8phgo64jnivby21o8x7ixl/08hotelkixby-2-7469.jpg?width=1920">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJq3kJMb7X88k32udOnoQbv-DGXtmx7T_Wlw&s">
+    <img src="https://cache.marriott.com/content/dam/marriott-renditions/TYOLC/tyolc-kioi-pool-6383-hor-feat.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1920px:*">
+    <img src="https://luxuryhotelkyoto.com/tokyo/wp-content/uploads/sites/24/2019/08/the-prince-gallery2.jpg">
+    <img src="https://en.palacehoteltokyo.com/wp-content/uploads/Palace-Hotel-Tokyo-Prive-Terrace-Evening-Gallery-640x470.jpg">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/20/15/8b/65/caption.jpg?w=900&h=500&s=1">
+    <img src="https://assets.cntraveller.in/photos/62b304e84507a8eb3d09d1eb/16:9/w_2992,h_1683,c_limit/hotel-lutetia-josephine-baker-suite-3-feb20-pr.jpg">
+    <img src="https://static.dezeen.com/uploads/2025/10/rh-paris-gallery-restaurant-foster-and-partners_dezeen_2364_col_6.jpg">
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>City Lights Hotel</h3>
+      <p>Urban luxury hotel for an unforgettable city experience.</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="#">Rooms</a></p>
+      <p><a href="#">Dining</a></p>
+      <p><a href="#">Spa</a></p>
+      <p><a href="#">Gallery</a></p>
+    </div>
+
+    <div class="social">
+      <h3>Follow Us</h3>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 City Lights Hotel | Urban Comfort
+  </div>
+</footer>
+
+<!-- JS for booking message -->
+<script>
+  const bookingForm = document.getElementById('bookingForm');
+  const successMessage = document.getElementById('successMessage');
+
+  bookingForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Show message
+    successMessage.style.display = 'block';
+    setTimeout(() => successMessage.style.opacity = '1', 50);
+
+    // Fade out after 5 seconds
+    setTimeout(() => {
+      successMessage.style.opacity = '0';
+      setTimeout(() => successMessage.style.display = 'none', 600);
+    }, 5000);
+
+    bookingForm.reset();
+    successMessage.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>

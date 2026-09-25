@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tokyo - Top 12 Places</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(20,10,40,0.75), rgba(20,10,40,0.75)),
+        url("https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/bltc1564bc44f66a900/675e1262cbd7d6bc5f15c6b0/japan-725347-Header_Mobile.jpg?fit=crop&disable=upscale&auto=webp&quality=60&crop=smart");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #F5EFFF;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeDown 1.2s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      color: #FF77CD;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+      color: #8EECF5;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      padding: 50px;
+      animation: fadeUp 1.5s ease;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-15px) scale(1.03);
+      box-shadow: 0 30px 60px rgba(255, 119, 205, 0.6);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.15);
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h1 {
+      font-size: 1.3rem;
+      color: #FF77CD;
+      margin-bottom: 8px;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+      color: #F5EFFF;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      background: rgba(0,0,0,0.4);
+      color: #8EECF5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Tokyo – Top 12 Places</h1>
+    <p>Neon Lights • Tradition • Future City</p>
+  </header>
+
+  <section class="card-container">
+
+    <div class="card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/7c/eb/cb/photo0jpg.jpg?w=800&h=500&s=1" alt="Shibuya Crossing">
+      <div class="card-content">
+        <h1>Shibuya Crossing</h1>
+        <p>The world’s busiest pedestrian crossing.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://byfood.b-cdn.net/api/public/assets/59151/content" alt="Tokyo Tower">
+      <div class="card-content">
+        <h1>Tokyo Tower</h1>
+        <p>Iconic red tower with panoramic city views.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2020/05/sensoji-temple-iStock-1083328636-1024x684.jpg" alt="Senso-ji">
+      <div class="card-content">
+        <h1>Senso-ji Temple</h1>
+        <p>Tokyo’s oldest and most famous Buddhist temple.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.gotokyo.org/en/story/guide/shinjuku-shop/images/shopping_guide_670.webp" alt="Shinjuku">
+      <div class="card-content">
+        <h1>Shinjuku</h1>
+        <p>Skyscrapers, nightlife, and neon streets.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.getyourguide.com/img/tour/5a682d769fafd7abb8e2fb9dba7609079c8a7b17832fe9c90770b298d626436a.png/155.jpg" alt="Akihabara">
+      <div class="card-content">
+        <h1>Akihabara</h1>
+        <p>Anime, gaming, and electronics paradise.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwJeiTiUmUVTVB3mpt9z5kuZG0ACeMNAZ_ww&s" alt="Meiji Shrine">
+      <div class="card-content">
+        <h1>Meiji Shrine</h1>
+        <p>Peaceful Shinto shrine surrounded by forest.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2019/03/unicorn-gundam-diver-city-odaiba-iStock-1185676118-770x513.jpg" alt="Odaiba">
+      <div class="card-content">
+        <h1>Odaiba</h1>
+        <p>Futuristic island with shopping and views.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLz4m9pcLchYmcEWvK9g3KpKMoprlzGdXfPA&s" alt="Ginza">
+      <div class="card-content">
+        <h1>Ginza</h1>
+        <p>Luxury shopping and fine dining district.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.agoda.com/wp-content/uploads/2024/07/Ueno-Tokyo-Ueno-Park-with-cherry-blossom.jpg" alt="Ueno Park">
+      <div class="card-content">
+        <h1>Ueno Park</h1>
+        <p>Famous for museums and cherry blossoms.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Roppongi_night.jpg" alt="Roppongi">
+      <div class="card-content">
+        <h1>Roppongi</h1>
+        <p>Art museums and vibrant nightlife.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2024/06/26/b04e6dfba1994651a741cbdf8f14ccf6_e686f15c9b494bd7ac29b8d2d856d06e_Alp_Galip_shutterstock_2277612335.jpg" alt="Tsukiji Market">
+      <div class="card-content">
+        <h1>Tsukiji Market</h1>
+        <p>Fresh seafood and iconic street food.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.civitatis.com/f/japon/tokio/guia/asakusa-m.jpg" alt="Asakusa">
+      <div class="card-content">
+        <h1>Asakusa</h1>
+        <p>Traditional streets with historic charm.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Tokyo | Where Tradition Meets the Future 🗼
+  </footer>
+
+</body>
+</html>

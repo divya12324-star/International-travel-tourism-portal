@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 80, 90, 0.65), rgba(0, 80, 90, 0.65)),
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.95);
+    width: 380px;
+    padding: 40px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.3);
+    animation: fadeUp 1s ease;
+}
+
+.contact-card h1 {
+    color: #006d6f;
+    margin-bottom: 8px;
+}
+
+.contact-card p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* INPUTS */
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group textarea {
+    resize: none;
+    height: 90px;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    background: white;
+    padding: 0 6px;
+    color: #888;
+    transition: 0.3s;
+    pointer-events: none;
+}
+.phone-group {
+    display: flex;
+    align-items: center;
+}
+
+.country-code {
+    background: #009688;
+    color: white;
+    padding: 12px 14px;
+    border-radius: 8px 0 0 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.phone-group input {
+    border-radius: 0 8px 8px 0;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #009688;
+}
+
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:valid + label,
+.input-group textarea:valid + label {
+    top: -8px;
+    font-size: 12px;
+    color: #009688;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #009688, #00bfa5);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 12px 25px rgba(0,150,136,0.5);
+}
+
+/* THANK YOU MESSAGE (DIFFERENT COLORS) */
+.thank-you {
+    display: none;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: white;
+    font-weight: 600;
+    animation: popIn 0.8s ease;
+}
+
+.thank-you span {
+    display: block;
+    margin-top: 6px;
+    font-size: 14px;
+    color: #fff3e0;
+}
+
+/* FOOTER */
+.footer {
+    background: #003c40;
+    color: #eee;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+.footer-box h3 {
+    color: #00e5c1;
+    margin-bottom: 15px;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 8px;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+    color: #00e5c1;
+    padding-left: 5px;
+}
+
+.social-icons a {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    background: #009688;
+    color: white;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: 0.4s;
+}
+
+.social-icons a:hover {
+    background: #00e5c1;
+    transform: translateY(-4px);
+}
+
+.footer-bottom {
+    background: #002c2f;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}

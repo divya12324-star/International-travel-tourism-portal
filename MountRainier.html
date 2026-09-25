@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mount Rainier - Top 12 Places</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("https://57hours.com/wp-content/uploads/2022/07/hikes-mount-rainier-national-park-1920x1280.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color:white;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeDown 1.2s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .card-content a {
+      display: inline-block;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #C2E5D3;
+      text-decoration: none;
+      letter-spacing: 1px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .card-content a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      left: 0;
+      bottom: -6px;
+      background: #ffd166;
+      transition: width 0.3s ease;
+    }
+
+    .card-content a:hover {
+      color: #ffd166;
+      text-shadow: 0 0 15px rgba(255, 209, 102, 0.8);
+    }
+
+    .card-content a:hover::after {
+      width: 100%;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      padding: 50px;
+      animation: fadeUp 1.5s ease;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-15px) scale(1.03);
+      box-shadow: 0 30px 60px rgba(255, 200, 100, 0.6);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.15);
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Mount Rainier - Top 12 Places</h1>
+    <p>Explore • Hike • Discover the Beauty</p>
+  </header>
+
+  <section class="card-container">
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqNy_SZpFNVtEdqKB5YgFURSdBb5B4Z0hgsA&s" alt="Paradise">
+      <div class="card-content">
+       <h1>Paradise Area</h1>
+        <p>Popular viewpoint with wildflower meadows and scenic trails.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbiMkAV9FvQ5mmi_GxDPZ47rGpXf9g0MmPDw&s" alt="Sunrise Visitor Center">
+      <div class="card-content">
+           <h1>Sunrise Visitor Center</h1>
+      <p>Highest point accessible by car, offering stunning sunrise views.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.nps.gov/common/uploads/cropped_image/primary/6E56C088-C919-B169-3F9EF92F1EEBDEDE.jpg?width=1600&quality=90&mode=crop" alt="Grove of the Patriarchs">
+      <div class="card-content">
+        <h1>Grove of the Patriarchs</h1>
+        <p>A serene forest trail with ancient towering trees.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/43/04/a8/20160930-170303-largejpg.jpg?w=1200&h=-1&s=1" alt="Nisqually Vista">
+      <div class="card-content">
+         <h1>Nisqually Vista</h1>
+        <p>Easy trails with panoramic views of glaciers and valleys.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://elliottslocationphotography.com/wp-content/uploads/2021/01/mowich-2.jpg?w=1024" alt="Mowich Lake">
+      <div class="card-content">
+         <h1>Mowich Lake</h1>
+        <p>Beautiful alpine lake, great for camping and kayaking.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.randalljhodges.com/images/xl/C129-Christine-Falls-Mt-Rainier-NP-WA.jpg" alt="Christine Falls">
+      <div class="card-content">
+          <h1>Christine Falls</h1>
+        <p>Photogenic waterfall easily accessible from the main road.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/6a/cb/9c/tarn-on-the-naches-peak.jpg?w=1200&h=-1&s=1" alt="Tipsoo Lake">
+      <div class="card-content">
+          <h1>Tipsoo Lake</h1>
+
+        <p>Scenic lake reflecting Mount Rainier’s peak, perfect for photos.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://visitrainier.com/wp-content/uploads/2018/07/Summer-Sunrise-at-Reflection-Lake-300DPI-Courtesy-Deby-Dixon-Edit.jpg" alt="Reflection Lakes">
+      <div class="card-content">
+          <h1>Reflection Lakes</h1>
+
+        <p>Popular spot for capturing mirrored mountain views in calm waters.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4jjurGlTPCZiWiKnUB_0VTWU9xUT0JR8vrcJpdSEPCkw2JbEW-PjRuTpX&s=10" alt="Tahoma Creek">
+      <div class="card-content">
+          <h1>Tahoma Creek</h1>
+
+        <p>Peaceful creek with hiking trails along the river.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.randybottphotography.com/images/xl/Mount-Rainier-Sunset-Glow.jpg" alt="Sunset at Mount Rainier">
+      <div class="card-content">
+        <h1>Sunset at Mount Rainier</h1>
+
+        <p>Best viewpoint to enjoy breathtaking sunsets over the mountain.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjrOkvFHuxhtQNYOtA2xIhmT6YdMwQc-g_uu6f3UwATw&s=10" alt="Comet Falls">
+      <div class="card-content">
+        <h1>Comet Falls</h1>
+
+        <p>One of the tallest waterfalls in the park, surrounded by lush forest.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://embracesomeplace.com/wp-content/uploads/2020/04/DSC06289.jpg" alt="Skyline Trail">
+      <div class="card-content">
+        <h1>Skyline Trail</h1>
+
+        <p>Challenging hiking trail offering views of glaciers, valleys, and wildflowers.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Mount Rainier - Explore the Majestic Peaks ⛰️
+  </footer>
+
+</body>
+</html>

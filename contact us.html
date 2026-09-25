@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | WanderWave</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="contact us.css">
+</head>
+<body>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+    <div class="contact-card">
+        <h1>Contact Us</h1>
+        <p>Start your journey with us 🌴</p>
+
+        <form id="contactForm">
+            <div class="input-group">
+                <input type="text" required>
+                <label>Full Name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" required>
+                <label>Email Address</label>
+            </div>
+               <!-- PHONE NUMBER WITH AUTO COUNTRY CODE -->
+<div class="input-group phone-group">
+    <span class="country-code">+91</span>
+    <input type="tel"
+           id="phone"
+           maxlength="10"
+           pattern="[0-9]{10}"
+           required>
+    <label>Phone Number</label>
+</div>
+
+
+            <div class="input-group">
+                <textarea required></textarea>
+                <label>Your Message</label>
+            </div>
+
+            <button type="submit" id="submitBtn">Send Message</button>
+
+            <!-- THANK YOU MESSAGE -->
+            <div class="thank-you" id="thankYou">
+                ✈️ Thank you for contacting us! <br>
+                <span>Our travel experts will reach you soon.</span>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>Travel World With Us</h3>
+            <p>Discover destinations. Create memories. Travel better.</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+            <p><i class="fas fa-envelope"></i> info@tourism.com</p>
+            <p><i class="fas fa-location-dot"></i> New Delhi, India</p>
+        </div>
+
+        
+    </div>
+
+    <div class="footer-bottom">
+        © 2026Travel With Confidence 🌍
+    </div>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+    const form = document.getElementById("contactForm");
+    const thankYou = document.getElementById("thankYou");
+    const button = document.getElementById("submitBtn");
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        button.innerText = "Sending...";
+        button.disabled = true;
+
+        setTimeout(() => {
+            form.reset();
+            button.style.display = "none";
+            thankYou.style.display = "block";
+        }, 1200);
+    });
+</script>
+
+</body>
+</html>

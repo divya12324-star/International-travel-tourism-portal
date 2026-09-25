@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paradise Resort | Sunny Beaches</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root{
+  --primary:#0ea5a4;
+  --secondary:#fbbf24;
+  --dark:#0f172a;
+  --light:#f8fafc;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:var(--light);
+  color:var(--dark);
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1d/c0/e6/paradise-beach.jpg?w=900&h=500&s=1");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+}
+
+.hero h1{font-size:4rem;}
+.hero p{font-size:1.2rem;margin-top:10px;}
+
+/* SECTION */
+.section{padding:80px 8%;}
+.section-title{
+  text-align:center;
+  font-size:2.7rem;
+  color:var(--primary);
+  margin-bottom:50px;
+}
+
+/* CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 10px 25px ;
+  transition:.4s;
+}
+
+.card:hover{
+  transform:translateY(-15px) scale(1.03);
+  box-shadow:0 25px 45px rgba(0,0,0,.25);
+}
+
+.card img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:22px;
+}
+
+.card-content h3{
+  color:var(--primary);
+}
+
+.card-content span{
+  color:var(--secondary);
+  font-weight:600;
+}
+
+/* BOOKING */
+.booking{
+  background:
+    linear-gradient(rgba(14,165,164,.9),rgba(14,165,164,.9)),
+    url("https://images.unsplash.com/photo-1520250497591-112f2f40a3f4");
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+}
+
+.booking form{
+  max-width:900px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.booking input,
+.booking select,
+.booking button{
+  padding:14px;
+  border:none;
+  border-radius:8px;
+}
+
+.booking select{
+  background:#fff;
+}
+
+.booking button{
+  background:var(--secondary);
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* Success message */
+#successMessage{
+  display:none;
+  margin-top:20px;
+  background:rgba(255,255,255,0.95);
+  color:#0f766e;
+  padding:15px 20px;
+  border-radius:8px;
+  font-weight:600;
+  text-align:center;
+  opacity:0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.gallery img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:15px;
+  transition:.4s;
+}
+
+.gallery img:hover{
+  transform:scale(1.07);
+}
+
+/* FOOTER */
+footer{
+  background:#0f766e;
+  color:#fff;
+  padding:40px 8% 20px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+}
+
+footer a{
+  color:#e5e7eb;
+  text-decoration:none;
+}
+
+footer a:hover{
+  color:var(--secondary);
+}
+
+.social i{
+  margin-right:12px;
+  font-size:1.4rem;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:25px;
+  font-size:.9rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero h1{font-size:2.6rem;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Paradise Resort</h1>
+    <p>Luxury living beside sunny beaches</p>
+  </div>
+</section>
+
+<!-- RESORT HIGHLIGHTS -->
+<section class="section">
+  <h2 class="section-title">Resort Highlights</h2>
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://mikeandlauratravel.com/wp-content/uploads/2023/04/Places-like-Bora-Bora.webp">
+      <div class="card-content">
+        <h3>Beachfront Villa</h3>
+        <span>Explore →</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://damhyul3s75yv.cloudfront.net/photos/17609/original_Four_Seasons_Maldives-Top_5_Luxury_Overwater_Villas_in_the_World.jpeg">
+      <div class="card-content">
+        <h3>Luxury Room</h3>
+        <span>Explore →</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://chewstoexplore.com/wp-content/uploads/2025/03/maldives-vs-bora-bora-1024x1024.png">
+      <div class="card-content">
+        <h3>Family Suite</h3>
+        <span>Explore →</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://res.cloudinary.com/ocean-holidays-test/image/upload/c_scale,w_auto,f_auto,dpr_auto/WingedBoots/MagazineArticle/1672/exwa2eivlhooqndw9bjw.webp">
+      <div class="card-content">
+        <h3>Deluxe Room</h3>
+        <span>Explore →</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://media.blacktomato.com/cdn-cgi/image/width=1520,height=800,fit=cover,quality=82,format=auto/https://media.blacktomato.com/2019/10/WEB-Overwater-Villa.jpg">
+      <div class="card-content">
+        <h3>Suite Room</h3>
+        <span>Explore →</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.royal-hawaiian.com/rooms-overview/prestige-suites/images/img_al1.webp">
+      <div class="card-content">
+        <h3>Executive Room</h3>
+        <span>Explore →</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="section booking">
+  <h2 class="section-title" style="color:#fff;">Book Your Stay</h2>
+
+  <form id="bookingForm">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+
+    <select required>
+      <option value="">Select Room Type</option>
+      <option>Beachfront Villa</option>
+      <option>Luxury Room</option>
+      <option>Family Suite</option>
+      <option>Deluxe Room</option>
+      <option>Suite Room</option>
+      <option>Executive Room</option>
+    </select>
+ <select required>
+      <option value="">Select Destination</option>
+      <option>Maldives</option>
+      <option>Bora Bora</option>
+      <option>Hawaii</option>
+    </select>
+
+    <input type="date" required>
+    <input type="date" required>
+
+    <button type="submit">Book Now</button>
+  </form>
+
+  <!-- Success message -->
+  <div id="successMessage">
+    ✅ Your booking has been successfully done! See you soon at Paradise Resort.
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section">
+  <h2 class="section-title">Resort Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.trvl-media.com/lodging/36000000/35150000/35148600/35148526/827103c0.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/067/763/200/small/tropical-island-shore-featuring-paradise-beach-water-villas-bungalows-in-maldives-white-sand-palm-trees-and-vibrant-blue-sea-under-bright-sunny-sky-stunning-summer-beach-travel-luxury-destination-photo.jpg">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/ba/39/d3/brando-suite-bora-bora.jpg?w=500&h=-1&s=1">
+    <img src="https://images.trvl-media.com/lodging/6000000/5450000/5445600/5445587/ded78d7f.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill">
+    <img src="https://gallery.streamlinevrs.com/units-gallery/00/08/A9/image_166961214.jpeg">
+    <img src="https://media.vrbo.com/lodging/97000000/96950000/96947400/96947321/5a833a5b.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill">
+    <img src="https://gallery.streamlinevrs.com/units-gallery/00/08/A9/image_166961204.jpeg">
+    <img src="https://gallery.streamlinevrs.com/units-gallery/00/08/A9/image_166775653.jpeg">
+    <img src="https://gallery.streamlinevrs.com/units-gallery/00/08/A9/image_170093475.jpeg">
+    <img src="https://images.trvl-media.com/lodging/5000000/4420000/4410900/4410854/248ee0b3.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill">
+    <img src="https://i0.wp.com/wanderlust-magazine.com/wp-content/uploads/2025/08/1-Bora-Bora-The-Paradise-Island-of-French-Polynesia.jpg?fit=1320%2C1043&ssl=1">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/fe/25/ec/caption.jpg?w=1200&h=1200&s=1">
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>Paradise Resort</h3>
+      <p>Luxury beachside resort for unforgettable vacations.</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="#">Rooms</a></p>
+      <p><a href="#">Dining</a></p>
+      <p><a href="#">Spa</a></p>
+      <p><a href="#">Gallery</a></p>
+    </div>
+
+    <div class="social">
+      <h3>Follow Us</h3>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Paradise Resort | Sunny Beaches
+  </div>
+</footer>
+
+<!-- JS for booking message -->
+<script>
+  const bookingForm = document.getElementById('bookingForm');
+  const successMessage = document.getElementById('successMessage');
+
+  bookingForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Show message
+    successMessage.style.display = 'block';
+    setTimeout(() => successMessage.style.opacity = '1', 50);
+
+    // Fade out after 5 seconds
+    setTimeout(() => {
+      successMessage.style.opacity = '0';
+      setTimeout(() => successMessage.style.display = 'none', 600);
+    }, 5000);
+
+    bookingForm.reset();
+    successMessage.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>

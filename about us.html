@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: 
+                linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+                url("https://images.goway.com/production/featured_images/switzerland_train_alps_landwasser_viaduct_iStock-1815540289.jpg?VersionId=kk6Jwe5jdQSA1MyDniRkiPNC_KfOooQ9");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color:  #C04000;
+        }
+
+      
+
+        /* ===== CONTENT ===== */
+        .container {
+            padding: 50px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* ===== CARDS ===== */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-12px) scale(1.04);
+            box-shadow: 0 15px 35px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-content h3 {
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: rgba(0,0,0,0.9);
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- ===== ABOUT CONTENT ===== -->
+<div class="container">
+
+    <h1>About Our Tourism Website</h1>
+    <p>
+        Our tourism website is created to help travelers explore new destinations,
+        plan their journeys, and enjoy hassle-free travel experiences.
+    </p>
+
+    <h2>Our Purpose</h2>
+    <p>
+        We aim to provide complete and reliable travel information, making trip planning
+        easy and enjoyable for every traveler.
+    </p>
+
+    <h2>Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1130399708/photo/retro-camera-with-toy-plane-map-and-passport-on-white-background-travel-tips-concept.jpg?s=612x612&w=0&k=20&c=lyqWKkc0ZMjkTwCGk5gcUe9_HxXxRqfriWfIwpdnJSA=">
+            <div class="card-content">
+                <h3>Tourist Information</h3>
+                <p>Detailed information about famous tourist destinations.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://t4.ftcdn.net/jpg/00/17/34/89/360_F_17348966_tNtrlpRolnVGPaRVJilkqQSRy8MbBB1u.jpg">
+            <div class="card-content">
+                <h3>Travel Guides</h3>
+                <p>Complete travel guides, itineraries, and helpful tips.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
+            <div class="card-content">
+                <h3>Hotels & Stay</h3>
+                <p>Information about hotels, resorts, and budget stays.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://www.sodhatravel.com/hs-fs/hubfs/Taxis-Sodha-Travel.jpg?width=5472&name=Taxis-Sodha-Travel.jpg">
+            <div class="card-content">
+                <h3>Transport</h3>
+                <p>Guidance on local transport and travel routes.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>📧 Email: <a href="mailto:info@tourism.com">info@tourism.com</a></p>
+    <p>📞 Mobile: <a href="tel:+919876543210">+91 98765 43210</a></p>
+    <p>© 2026 Tourism Website. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

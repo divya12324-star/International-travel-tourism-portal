@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paris - Top 12 Places</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(20,20,30,0.65), rgba(20,20,30,0.65)),
+        url("https://static.india.com/wp-content/uploads/2018/08/Paris-1.jpg?impolicy=Medium_Resize&w=1200&h=800");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #F5F3EF;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeDown 1.2s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      color: #E6C77D;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+      color: #CDE3F0;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      padding: 50px;
+      animation: fadeUp 1.5s ease;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.14);
+      backdrop-filter: blur(14px);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-15px) scale(1.03);
+      box-shadow: 0 30px 60px rgba(230, 199, 125, 0.6);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.15);
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h1 {
+      font-size: 1.3rem;
+      color: #E6C77D;
+      margin-bottom: 8px;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+      color: #F5F3EF;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      background: rgba(0,0,0,0.4);
+      color: #CDE3F0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Paris – Top 12 Places</h1>
+    <p>Romance • Art • Timeless Elegance</p>
+  </header>
+
+  <section class="card-container">
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA_Z25PZbGAgzLd5eEuKnWmAGvbCb56z8KRg&s" alt="Eiffel Tower">
+      <div class="card-content">
+        <h1>Eiffel Tower</h1>
+        <p>The iconic symbol of Paris and France.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1s90XECFQ99-D_oqXzpsHJdY21S0Xh-XJQA&s" alt="Louvre Museum">
+      <div class="card-content">
+        <h1>Louvre Museum</h1>
+        <p>World’s largest art museum and home of the Mona Lisa.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn-imgix.headout.com/media/images/33cbe0bcfe63ae44b3e6f8ccea48f14f-31916-paris-notre-dame-outdoor-walking-tour---entry-to-the-cathedral-01.jpg?auto=format&w=1069.6000000000001&h=687.6&q=90&ar=14%3A9&crop=faces&fit=crop" alt="Notre Dame">
+      <div class="card-content">
+        <h1>Notre-Dame Cathedral</h1>
+        <p>Historic Gothic cathedral on the Seine.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blted2fd26b0f7f6b89/682233917a31967c0d3e5b25/arnaud-mariat-49DEzojVZ0U-unsplash-HEADER-MOBILE.jpg?fit=crop&disable=upscale&auto=webp&quality=60&crop=smart" alt="Montmartre">
+      <div class="card-content">
+        <h1>Montmartre</h1>
+        <p>Artistic hilltop neighborhood with stunning views.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHx-WS0x2iwZA4qhWvrO-ss9LjF_yMyKP1pQ&s" alt="Sacré-Cœur">
+      <div class="card-content">
+        <h1>Sacré-Cœur</h1>
+        <p>Beautiful basilica overlooking Paris.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.britannica.com/28/255528-050-E63F53A7/arc-de-triumph-paris-france.jpg" alt="Arc de Triomphe">
+      <div class="card-content">
+        <h1>Arc de Triomphe</h1>
+        <p>Monument honoring French military history.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-SiG1E8q8Rki133MCIue3NG2I7qkgLzU71w&s" alt="Champs-Élysées">
+      <div class="card-content">
+        <h1>Champs-Élysées</h1>
+        <p>Famous avenue for shopping and cafés.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.parisperfect.com/cdn-cgi/image/format=auto,width=1256/https://www.parisperfect.com/g/photos/upload/sml_574829411-1482968041-Seine-HERO.jpg" alt="Seine River">
+      <div class="card-content">
+        <h1>Seine River</h1>
+        <p>Romantic river cruises through the city.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.natgeofe.com/n/5f01634d-6d3c-49a8-beb4-75283b26e411/Versailles_p262.jpg" alt="Palace of Versailles">
+      <div class="card-content">
+        <h1>Palace of Versailles</h1>
+        <p>Lavish royal palace just outside Paris.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://media.cntraveler.com/photos/5952f9ca9034d21207799151/16:9/w_2560,c_limit/jardin-du-luxembourg-GettyImages-151514883.jpg" alt="Luxembourg Gardens">
+      <div class="card-content">
+        <h1>Luxembourg Gardens</h1>
+        <p>Elegant gardens perfect for relaxation.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkkB1W3g4LpxGoOGyjq6U8OQgLtlKRQqUB4A&s" alt="Musée d'Orsay">
+      <div class="card-content">
+        <h1>Musée d'Orsay</h1>
+        <p>Impressionist art in a former railway station.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://d1thclymmaxo3q.cloudfront.net/cache/img/8aa334ea92ec7be6debd7d500735c4cfe85321fe-8aa334-1200-627-crop.jpg?q=1702657522" alt="Latin Quarter">
+      <div class="card-content">
+        <h1>Latin Quarter</h1>
+        <p>Historic streets, cafés, and student life.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Paris | City of Love & Lights ✨
+  </footer>
+
+</body>
+</html>

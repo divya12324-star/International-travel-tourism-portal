@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New York City - Top 12 Places</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(10,10,25,0.7), rgba(10,10,25,0.7)),
+        url("https://cdn.sanity.io/images/nxpteyfv/goguides/dd05bddc197a1c9dba9ecb43e26b30af4dbcf4f9-1600x1066.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #EAEAFF;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeDown 1.2s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      color: #FFD166;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+      color: #A0C4FF;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      padding: 50px;
+      animation: fadeUp 1.5s ease;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-15px) scale(1.03);
+      box-shadow: 0 30px 60px rgba(255, 209, 102, 0.6);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.15);
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h1 {
+      font-size: 1.3rem;
+      color: #FFD166;
+      margin-bottom: 8px;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+      color: #EAEAFF;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      background: rgba(0,0,0,0.4);
+      color: #A0C4FF;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>New York City – Top 12 Places</h1>
+    <p>Skyscrapers • Culture • Iconic Landmarks</p>
+  </header>
+
+  <section class="card-container">
+
+    <div class="card">
+      <img src="https://www.greenroofs.com/wp-content/uploads/2020/06/FXC_IwanBaan_SOLMuseum_aerial.jpg" alt="Statue of Liberty">
+      <div class="card-content">
+        <h1>Statue of Liberty</h1>
+        <p>Symbol of freedom and one of the most iconic monuments in the world.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSHyg9JKbAyMIDRP5sfJF9CoVorJgarl7SPg&s" alt="Times Square">
+      <div class="card-content">
+        <h1>Times Square</h1>
+        <p>Bright lights, giant screens, and nonstop energy.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/central-park-GettyImages-75024411?_a=BAVAZGID0" alt="Central Park">
+      <div class="card-content">
+        <h1>Central Park</h1>
+        <p>A green oasis in the heart of Manhattan.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://lik.com/cdn/shop/products/Peter-Lik-Night-Over-Brooklyn-Framed-Recess-Mount_1800x.jpg?v=1585084410" alt="Brooklyn Bridge">
+      <div class="card-content">
+        <h1>Brooklyn Bridge</h1>
+        <p>Historic bridge with stunning skyline views.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.esbnyc.com/sites/default/files/2025-03/ESB-DarkBlueSky.webp" alt="Empire State Building">
+      <div class="card-content">
+        <h1>Empire State Building</h1>
+        <p>Legendary skyscraper with panoramic city views.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.adsttc.com/media/images/57d8/b61d/e58e/ce3d/7c00/0035/medium_jpg/Press_Kit_Images_34_View_at_dusk_WTC_Press_Kit.jpg?1473820183" alt="One World Trade Center">
+      <div class="card-content">
+        <h1>One World Trade Center</h1>
+        <p>The tallest building in NYC and a symbol of resilience.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i0.wp.com/www.newyorkinfo.nl/wp-content/uploads/2024/08/5th-Avenue-new-york-NYC.webp?fit=1018%2C1024&ssl=1" alt="Fifth Avenue">
+      <div class="card-content">
+        <h1>Fifth Avenue</h1>
+        <p>Luxury shopping and iconic city architecture.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://image.kkday.com/v2/image/get/h_650%2Cc_fit/s1.kkday.com/product_178033/20250731082906_wjLPh/png" alt="Wall Street">
+      <div class="card-content">
+        <h1>Wall Street</h1>
+        <p>The financial heart of the world.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.landscapeperformance.org/sites/default/files/styles/open_graph/public/02-High%20Line-After.jpg?h=9e499333&itok=AT68tMfj" alt="High Line">
+      <div class="card-content">
+        <h1>The High Line</h1>
+        <p>Elevated park with art, gardens, and city views.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/8a/c7/ff/broadway.jpg?w=900&h=500&s=1" alt="Broadway">
+      <div class="card-content">
+        <h1>Broadway</h1>
+        <p>World-famous theater district and live performances.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.ctfassets.net/1aemqu6a6t65/D2fYN5NI1YjCBIIAphsgg/262dea00a17d184f956e03c7a2cd0116/midtown_east_fam_grand_central_terminal_joe_buglewicz_268" alt="Grand Central">
+      <div class="card-content">
+        <h1>Grand Central Terminal</h1>
+        <p>Architectural masterpiece and historic station.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://image-tc.galaxy.tf/wijpeg-czap6zqxg14l90ot410a1jv8t/img-5272.jpg?width=1920" alt="SoHo">
+      <div class="card-content">
+        <h1>SoHo</h1>
+        <p>Trendy neighborhood known for art and cast-iron buildings.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 New York City | Experience the City That Never Sleeps 🌆
+  </footer>
+
+</body>
+</html>

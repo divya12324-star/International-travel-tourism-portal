@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Huangshan - Top 12 Places</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: 
+        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+        url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/4d/19/2f/amazing-sunset-and-clouds.jpg?w=900&h=500&s=1");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #FFF8E7;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeDown 1.2s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      color: #FFD166;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .card-content a {
+      display: inline-block;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #FFD166;
+      text-decoration: none;
+      letter-spacing: 1px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .card-content a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      left: 0;
+      bottom: -6px;
+      background: #FFB703;
+      transition: width 0.3s ease;
+    }
+
+    .card-content a:hover {
+      color: #FFB703;
+      text-shadow: 0 0 15px rgba(255, 183, 3, 0.8);
+    }
+
+    .card-content a:hover::after {
+      width: 100%;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      padding: 50px;
+      animation: fadeUp 1.5s ease;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-15px) scale(1.03);
+      box-shadow: 0 30px 60px rgba(255, 183, 3, 0.6);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.15);
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      color: #FFD166;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      background: rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Huangshan - Top 12 Places</h1>
+    <p>Clouds • Pines • Scenic Peaks</p>
+  </header>
+
+  <section class="card-container">
+
+    <div class="card">
+      <img src="https://i0.wp.com/mountainfieldguide.com/wp-content/uploads/2019/12/A-walking-trail-at-the-very-top-of-Huangshan-mountain-during-sunrise-with-its-typical-pines-and-granite-peaks.-Famous-Lotus-peak-at-the-background..jpg?fit=1600%2C1067&ssl=1" alt="Lotus Peak">
+      <div class="card-content">
+        <h1> Lotus Peak</h1>
+        <p>Highest peak of Huangshan with breathtaking views of surrounding mountains.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://peakvisor.com/photo/SD/bright-summit-peak-3.jpg" alt="Bright Summit Peak">
+      <div class="card-content">
+        <h1> Bright Summit Peak</h1>
+        <p>Popular for sunrise views above the misty clouds.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrJsslknUeTmugcq8qpNXN6kMpp7RPmQoCJQ&s" alt="Celestial Peak">
+      <div class="card-content">
+        <h1>Celestial Peak</h1>
+        <p>A tranquil spot with scenic trails and cloud sea vistas.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.chinadiscovery.com/assets/images/huangshan/west-sea-grand-canyon/west-sea-grand-canyon-cable-way-768.jpg" alt="West Sea Grand Canyon">
+      <div class="card-content">
+        <h1>West Sea Grand Canyon</h1>
+        <p>Dramatic cliffs, gorges, and pine forests for adventurous hiking.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.huangshantourguide.com/public/upload/photo/huangshan-xihai-west-sea-scenic-area/img_514_d20200924164446.jpg" alt="Xihai Scenic Area">
+      <div class="card-content">
+        <h1>Xihai Scenic Area</h1>
+        <p>Panoramic trails and iconic cloud seas.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShm4RzzAH8XHK-1aIANYgfci0jwBXxxFCSbA&s" alt="Yungu Peak">
+      <div class="card-content">
+        <h1>Yungu Peak</h1>
+        <p>Known as the “Cloud Valley Peak,” great for sunrise photography.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.shutterstock.com/shutterstock/videos/1024724753/thumb/1.jpg?ip=x480" alt="Flying-Over Rock">
+      <div class="card-content">
+        <h1>Flying-Over Rock</h1>
+        <p>A giant balanced rock with stunning views of the peaks.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://subsites.chinadaily.com.cn/amazinghuangshan/att/20221107/1667802634458000352.jpg" alt="Guest-Greeting Pine">
+      <div class="card-content">
+        <h1>Guest-Greeting Pine</h1>
+        <p>Iconic twisted pine growing atop granite cliffs.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9F_P1qPJGTABxP5FYDirEs7oUQH-H5qvSlg&s" alt="Bright Cloud Pond">
+      <div class="card-content">
+        <h1>Bright Cloud Pond</h1>
+        <p>Small pond reflecting the peaks, surrounded by misty clouds.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7COiLMNJw6c-Cr7sukzjjp0JfnktfEKTHXQ&s" alt="Shixin Peak">
+      <div class="card-content">
+        <h1>Shixin Peak</h1>
+        <p>Popular hiking route with dramatic cliff views.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.huangshantourguide.com/public/upload/photo/steps-in-mount-huangshan/img_955_d20200914155240.thumb.jpg" alt="Cloud-Dispelling Pavilion">
+      <div class="card-content">
+        <h1>Cloud-Dispelling Pavilion</h1>
+        <p>Scenic pavilion with 360° views of surrounding mountains.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.huangshantourguide.com/public/upload/photo/lotus-flower-peak/img_385_d20150724173432.jpg" alt="Lotus Flower Peak">
+      <div class="card-content">
+        <h1>Lotus Flower Peak</h1>
+        <p>Named for its lotus-like shape, offering breathtaking vistas.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Huangshan Scenic Area | Explore the Misty Peaks 🌄
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Misty Mountains</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("https://images.stockcake.com/public/f/f/a/ffa4d173-c203-49ee-82c4-12879616129d_large/misty-mountain-peaks-stockcake.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #C2E5D3;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeDown 1.2s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .card-content a {
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #C2E5D3;
+      text-decoration: none;
+      letter-spacing: 1px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .card-content a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      left: 0;
+      bottom: -6px;
+      background: #ffd166;
+      transition: width 0.3s ease;
+    }
+
+    .card-content a:hover {
+      color: #ffd166;
+      text-shadow: 0 0 15px rgba(255, 209, 102, 0.8);
+    }
+
+    .card-content a:hover::after {
+      width: 100%;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      padding: 50px;
+      animation: fadeUp 1.5s ease;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-15px) scale(1.03);
+      box-shadow: 0 30px 60px rgba(255, 200, 100, 0.6);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.15);
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Misty Mountains</h1>
+    <p>Explore • Wander • Discover the Clouds</p>
+  </header>
+
+  <section class="card-container">
+
+    <div class="card">
+      <img src="https://wnpf.org/wp-content/uploads/2022/08/Meadow_mount_rainier_dave_govan_banner.jpg" alt="Mount Rainier">
+      <div class="card-content">
+        <a href="MountRainier.html" target="_blank">Mount Rainier</a>
+        <p>Iconic misty peak in Washington with glaciers and lush forests.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://pohcdn.com/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/%20Huangshan.jpg" alt="Huangshan">
+      <div class="card-content">
+        <a href="Huangshan.html" target="_blank">Huangshan</a>
+        <p>Famous Chinese misty mountain with granite peaks and clouds.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://deih43ym53wif.cloudfront.net/large_zermatt-matterhorn-switzerland-shutterstock_1298208013_44fea015e5.jpeg" alt="Swiss Alps">
+      <div class="card-content">
+        <a href="SwissAlps.html" target="_blank">Swiss Alps</a>
+        <p>Snowy and misty alpine mountains perfect for hiking and skiing.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Misty Mountains for Adventure ⛰️
+  </footer>
+
+</body>
+</html>

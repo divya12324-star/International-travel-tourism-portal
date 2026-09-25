@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swiss Alps - Top 12 Places</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: 
+        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+        url("https://media.assettype.com/outlooktraveller/import/outlooktraveller/public/uploads/articles/explore/Depositphotos_66016481_S.jpg?w=1200&h=900&auto=format%2Ccompress&fit=max&enlarge=true");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #E0F7FA;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeDown 1.2s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      color: #00B0FF;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .card-content a {
+      display: inline-block;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #00B0FF;
+      text-decoration: none;
+      letter-spacing: 1px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .card-content a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      left: 0;
+      bottom: -6px;
+      background: #00E5FF;
+      transition: width 0.3s ease;
+    }
+
+    .card-content a:hover {
+      color: #00E5FF;
+      text-shadow: 0 0 15px rgba(0, 229, 255, 0.8);
+    }
+
+    .card-content a:hover::after {
+      width: 100%;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      padding: 50px;
+      animation: fadeUp 1.5s ease;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-15px) scale(1.03);
+      box-shadow: 0 30px 60px rgba(0, 224, 255, 0.6);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.15);
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      color: #00B0FF;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      background: rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Swiss Alps - Top 12 Places</h1>
+    <p>Peaks • Glaciers • Scenic Trails</p>
+  </header>
+
+  <section class="card-container">
+
+    <div class="card">
+      <img src="https://www.flamingotravels.co.in/blog/wp-content/uploads/2023/06/Matterhorn.png" alt="Matterhorn">
+      <div class="card-content">
+        <h1>Matterhorn</h1>
+        <p>The iconic pyramid-shaped peak on the border of Switzerland and Italy.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/90/e4/60/beautiful-view.jpg?w=1200&h=-1&s=1" alt="Eiger">
+      <div class="card-content">
+        <h1>Eiger</h1>
+        <p>Famous for the North Face climbing routes and alpine scenery.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i0.wp.com/alpshiking.swisshikingvacations.com/wp-content/uploads/2020/04/05ALP_0243-Wasenegg-hikers-Eiger-Monch-Jungfrau-mini-min.jpg?fit=1000%2C702&ssl=1" alt="Jungfrau">
+      <div class="card-content">
+        <h1>Jungfrau</h1>
+        <p>Part of the “Top of Europe” region with breathtaking glacier views.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/c9/70/c9/piz-gloria.jpg?w=1200&h=-1&s=1" alt="Schilthorn">
+      <div class="card-content">
+        <h1>Schilthorn</h1>
+        <p>Famous for panoramic views and the Piz Gloria revolving restaurant.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.signatureluxurytravel.com.au/wp-content/uploads/2025/10/Grindelwald-AdobeStock_1171143624.jpg" alt="Grindelwald">
+      <div class="card-content">
+        <h1>Grindelwald</h1>
+        <p>A picturesque village at the foot of the Eiger with alpine trails.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.ctfassets.net/ukaa6ik2569a/6agm7ZwzvXJ84gwVnv7h42/68b9c07f1825a5a62f6e6ec919225e56/destination-zermatt-winter.jpg?f=center&w=3840&fm=jpg&q=80&fit=fill" alt="Zermatt">
+      <div class="card-content">
+        <h1>Zermatt</h1>
+        <p>Charming mountain village, base for Matterhorn adventures.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWjiW9E5zzgkYSMGLbkAhKuDWc5ZCzvfg9Iw&s" alt="Mont Blanc Region">
+      <div class="card-content">
+        <h1>Mont Blanc Region</h1>
+        <p>Snow-capped peaks and world-class skiing.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.squarespace-cdn.com/content/v1/5c0f0e23af209675771265b8/1727195815722-U9X1EBZLEWTJKTADDM70/image-asset.jpeg" alt="Lauterbrunnen">
+      <div class="card-content">
+        <h1>Lauterbrunnen Valley</h1>
+        <p>Deep valley with stunning waterfalls and alpine meadows.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://holidaystoswitzerland.com/wp-content/uploads/2020/03/Lake-Oeschinensee-Switzerland-1.jpg" alt="Lake Oeschinen">
+      <div class="card-content">
+        <h1>Lake Oeschinen</h1>
+        <p>Alpine lake with crystal waters, perfect for hiking and boating.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ytimg.com/vi/8Yv6eDpK2-Y/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCh3y5NlHu0tIu_mGZv5mKk2wgUzA" alt="Rosenlaui Glacier">
+      <div class="card-content">
+        <h1>Rosenlaui Glacier</h1>
+        <p>Scenic glacier area with trails and waterfalls.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.titlis.ch/_next/image?url=https%3A%2F%2Fassets.titlis.ch%2Fimages%2F6ngkbe24%2Fproduction%2F0c38bf41931e503b41fddedf0192479d51ea9be8-3640x2426.jpg%3Fw%3D2560%26q%3D70%26auto%3Dformat&w=3840&q=75" alt="Titlis">
+      <div class="card-content">
+        <h1>Mount Titlis</h1>
+        <p>Famous for its ice cave and cable car views over the Alps.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://holidaystoswitzerland.com/wp-content/uploads/2022/02/View-from-Rigi-Kulm-DP.jpg" alt="Rigi">
+      <div class="card-content">
+        <h1>Mount Rigi</h1>
+        <p>Known as the “Queen of the Mountains,” offering panoramic views.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Swiss Alps | Explore Majestic Peaks ❄️
+  </footer>
+
+</body>
+</html>
